@@ -23,14 +23,12 @@ DaXueShenMai/
 │   │   ├── lessons.md
 │   │   └── progress.md
 │   └── spec/
-├── skills/
-│   ├── dxsm-math/
-│   │   ├── SKILL.md
-│   │   └── references/
-│   ├── dxsm-english/        # 后续版本
-│   └── dxsm-408/            # 后续版本
-└── evals/
-    └── dxsm-math/
+└── skills/
+    ├── dxsm-math/
+    │   ├── SKILL.md
+    │   └── references/
+    ├── dxsm-english/        # 后续版本
+    └── dxsm-408/            # 后续版本
 ```
 
 - PKG-010 MUST：v1 只创建 `skills/dxsm-math/`。
@@ -148,17 +146,11 @@ README 必须提供可复制提示词：
 - DEP-004 MUST：Skill 不自动安装可选工具。
 - DEP-005 MUST：Skill 不使用 API Key 或独立云端调用。
 
-## 9. 测试资产位置
-
-- PKG-T-001 MUST：公开合成测试位于仓库 `evals/dxsm-math/`。
-- PKG-T-002 MUST：本地真题索引可保存，但不得包含完整题目与答案解析。
-- PKG-T-003 MUST：本地 PDF 路径只能作为维护者本地配置，不能成为安装者运行 Skill 的前提。
-
-## 10. 交付边界
+## 9. 交付边界
 
 - RELS-001 MUST：没有用户针对当前版本的明确发布授权时，实现完成后只保存在仓库工作区。
 - RELS-002 MUST NOT：自动复制到 `~/.agents/skills/` 或其他用户目录。
 - RELS-003 MUST NOT：没有用户针对当前版本的明确发布授权时，自动提交、推送、创建 tag 或发布 GitHub Release。
-- RELS-004 MUST：交付说明列出已创建文件、校验结果、测试结果和已知非阻断问题。
+- RELS-004 MUST：交付说明列出已创建文件、已做的检查和已知问题。
 - RELS-005 MUST：用户要求人工审核 Release Notes 时，必须先展示完整预览；只有用户明确批准该版本内容后，才可执行提交、push、tag 和 GitHub Release。
 - RELS-006 MUST：本次 `v1.0.1` 已按用户批准且删除“验证”板块后的 Release Notes 完成提交、push、annotated tag 与 GitHub Release，并已验证远程结果；该一次性授权不延续到后续版本。
