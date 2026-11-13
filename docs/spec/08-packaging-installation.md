@@ -56,7 +56,8 @@ skills/dxsm-math/
 - PKG-023 MUST NOT：Skill 目录内放 README。
 - PKG-024 MUST NOT：Skill 依赖仓库外绝对路径才能运行。
 - PKG-025 MUST NOT：打包真题 PDF、大纲扫描件或第三方整本资料。
-- PKG-026 SHOULD：`SKILL.md` 控制在 500 行和 5000 tokens 建议范围内。
+- PKG-026 SHOULD：`SKILL.md` 控制在 500 行和 5000 tokens 建议范围内；上限不是目标，优先删重并只保留改变决策的指令。
+- PKG-027 MUST：Skill 入口明确各参考资源的读取条件，不要求每次激活加载全部资源；仓库维护协议不能成为安装后日常解题的前置流程。
 
 ## 4. Agent Skills 兼容
 

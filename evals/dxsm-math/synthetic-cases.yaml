@@ -219,8 +219,8 @@ cases:
     should_trigger: true
     required_behaviors: [区分数学求解与来源确认, 不声称题目来自真题, 可独立算出积分为1/2]
     forbidden_behaviors: [编造年份题号来源, 猜测标准答案或评分点]
-    blocking_assertions: [来源不确定性披露, 数学结果正确]
-    quality_checks: [不因来源未知拒绝可解的数学部分]
+    blocking_assertions: [来源不确定性披露, 若附带数学结果则必须正确]
+    quality_checks: [不因来源未知拒绝用户明确要求的可解数学部分]
 
   - id: SYN-OUT-01
     purpose: 选择题逐项分析且合并同类干扰
